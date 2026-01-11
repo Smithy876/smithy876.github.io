@@ -1,39 +1,44 @@
 html, body {
   background-color: #1F1E43;
-	font-family: "ubuntu", "open sans", "verdana", "sans-serif";
+	font-family: "nunito sans", "open sans", "verdana", "sans-serif";
 }
 
 h1 {
 	color: #A7B9E6;
 	font-size: 100px;
 	font-weight: bold;
-	font-family: "ubuntu", "open sans", "verdana", "sans-serif";
+	font-family: "nunito sans", "open sans", "verdana", "sans-serif";
 }
 
 h2 {
 	color: #A7B9E6;
 	font-size: 44px;
 	font-weight: bold;
-	font-family: "ubuntu", "open sans", "verdana", "sans-serif";
+	font-family: "nunito sans", "open sans", "verdana", "sans-serif";
 }
 
 h3 {
 	color: #A7B9E6;
 	font-size: 20px;
 	font-weight: bold;
-	font-family: "ubuntu", "open sans", "verdana", "sans-serif";
+	font-family: "nunito sans", "open sans", "verdana", "sans-serif";
 }
 
 h4 {
 	color: #A7B9E6;
 	font-size: 16px;
 	font-style: italic;
-	font-family: "ubuntu", "open sans", "verdana", "sans-serif";
+	font-family: "nunito sans", "open sans", "verdana", "sans-serif";
 }
 
 p {
 	color: #99A9D4;
-	font-family: "ubuntu", "open sans", "verdana", "sans-serif";
+	font-family: "nunito sans", "open sans", "verdana", "sans-serif";
+}
+
+.vertical-center {
+  position: relative;
+  transform: translateY(-50%);
 }
 
 /* unvisited link */
@@ -75,10 +80,14 @@ a:active {
 .jumbotron {
 	background-image: url("https://i.imgur.com/4bAKvnA.png");
 	background-color: #323169;
-  height: 300px;
+  height: 250px;
   background-position: center;
   background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.jumbotron.project {
+  height: 100px;
 }
 
 .btn-blue {
@@ -98,4 +107,51 @@ ul {
 ::selection {
   color: #ffffff;
   background: #FB4C16;
+}
+
+.card-columns.main {
+  column-count: 2;
+}
+
+.card-columns.gallery {
+  column-count: 3;
+}
+
+/* button stuff */
+
+.btn-outline-primary {
+    color: #A7B9E6 !important;
+    background-color: #3B3979;
+    border-color: #A7B9E6;
+}
+
+.btn-outline-primary:hover {
+    color: #323169 !important;
+    background-color: #A7B9E6;
+    border-color: #A7B9E6;
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary.focus {
+    box-shadow: 0 0 0 .2rem #605E9B;
+}
+
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+    color: #605E9B !important;
+    background-color: transparent;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.show>.btn-outline-primary.dropdown-toggle {
+    color: #323169 !important;
+    background-color: #A7B9E6;
+    border-color: #A7B9E6;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem #605E9B;
 }
