@@ -38,12 +38,12 @@ p {
 
 /* unvisited link */
 a:link {
-  color: #FB4C16;
+  color: #FD7777;
 }
 
 /* visited link */
 a:visited {
-  color: #DB4C26;
+  color: #D69F9F;
 }
 
 /* mouse over link */
@@ -92,10 +92,10 @@ ul {
 
 ::-moz-selection { /* Code for Firefox */
   color: #ffffff;
-  background: #FB4C16;
+  background: #DD3603;
 }
 
-::selection {
+a::selection {
   color: #ffffff;
-  background: #FB4C16;
+  background: #12122D;
 }
